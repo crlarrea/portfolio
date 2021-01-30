@@ -68,14 +68,14 @@ padding-right: 20px;
 }
 
 .mobileIcon:after {
- content: '\2630';
- font-size: 30px;
+ content: '\002B';
+ font-size: 40px;
 
 }
 
 .mobileIconActive:after {
- content: '\2A2F';
- font-size: 45px;
+ content: "\2212";
+ font-size: 40px;
  }
 
 
