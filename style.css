@@ -69,6 +69,8 @@ padding-right: 20px;
 
 .mobileIcon:after {
  content: '\2630';
+ font-size: 30px;
+
 }
 
 .mobileIconActive:after {
