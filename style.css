@@ -73,6 +73,7 @@ padding-right: 20px;
 
 .mobileIconActive:after {
  content: '\2A2F';
+ font-size: 25px;
  }
 
 
