@@ -243,7 +243,7 @@ transition: 1s;
 
 .accordion:after {
  content: '\002B';
- font-size: 13px;
+ font-size: 20px;
  float: right;
  margin-left: 5px;
 }
