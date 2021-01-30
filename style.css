@@ -14,12 +14,17 @@ font-family: "Roboto";
 
 /* LEFT PANEL */
 .leftPanel {
-background-color: #00cc99;
+background-color: transparent;
 width: 50%;
 float:left;
+
+
 }
 section {
   background-color: #00cc99;
+  background-image: url("./img/bkg.png");
+  background-size: 305px;
+
 }
 
 section::after {
@@ -105,6 +110,7 @@ transition: 0s;
 color: #7fffd4;
 width: 80%;
 margin: 0 auto;
+
 }
 
 .bio img {
