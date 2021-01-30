@@ -9,7 +9,7 @@ var papers = ["Metallosupramolecular Assembly of Cr and p-Terphenyldinitrile by 
              ];
 
 
-var theAuthors = ["Anderson, A.E., Grillo, F., Larrea, C.R., Seljamäe-Green, R.T., Früchtl, H.A. and Baddeley, C.J., 2016. The Journal of PhysicalChemistry C, 120(2), pp.1049-1055.",
+var theAuthors = ["Anderson, A.E., Grillo, F., Larrea, C.R., Seljamäe-Green, R.T., Früchtl, H.A. and Baddeley, C.J., 2016. The Journal of Physical Chemistry C, 120(2), pp.1049-1055.",
                "Larrea, C.R. and Baddeley, C.J., 2016. ChemPhysChem, 17(7), pp.971-975.",
                "Grillo, F., Torres, J.G., Treanor, M.J., Larrea, C.R., Göetze, J.P., Lacovig, P., Früchtl, H.A., Schaub, R. and Richardson, N.V., 2016. Nanoscale, 8(17), pp.9167-9177.",
                "Crudden, C.M., Horton, J.H., Narouz, M.R., Li, Z., Smith, C.A., Munro, K., Baddeley, C.J., Larrea, C.R., Drevniok, B., Thanabalasingam, B. and McLean, A.B., 2016. Nature communications, 7(1), pp.1-7.",
