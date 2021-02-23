@@ -106,7 +106,7 @@ padding-right: 20px;
 }
 
 #myLinks button:first-of-type {
-  margin-top 20px;
+  padding-top 30px;
 }
 
 #myLinks button:focus,#myLinks button:hover {
