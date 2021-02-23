@@ -59,13 +59,16 @@ transition: 1s;
  display: none;
  }
 
-
+.mobileNav {
+ position: fixed;
+ top: 0;
+}
 
 .mobileIcon,.mobileIconActive {
 cursor: pointer;
 position: fixed;
 top: 0;
-right: 30px;
+right: 10px;
 background-color: transparent;
 display: block;
 clear: both;
@@ -101,9 +104,6 @@ padding-right: 20px;
   margin: 0;
   color: #264348;
   font-weight: bold;
-  position: fixed;
-  top: 0;
-
 }
 
 #myLinks button:focus,#myLinks button:hover {
