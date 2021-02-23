@@ -61,6 +61,8 @@ transition: 1s;
 
 .mobileIcon,.mobileIconActive {
 cursor: pointer;
+position: sticky;
+top: 0;
 background-color: transparent;
 display: block;
 clear: both;
