@@ -6,6 +6,7 @@
 @font-face {
   font-family: 'Roboto';
   src: url('webfonts/Roboto-Regular.ttf');
+}
 
 * {
 box-sizing: border-box;
