@@ -59,7 +59,7 @@ transition: 1s;
  display: none;
  }
 
-.mbobileNav {
+.mobileNav {
  display: fixed;
  top: 0;
 }
