@@ -63,6 +63,7 @@ transition: 1s;
 cursor: pointer;
 position: fixed;
 top: 0;
+margin-bottom: 30px;
 background-color: transparent;
 display: block;
 clear: both;
@@ -90,6 +91,8 @@ padding-right: 20px;
 #myLinks {
   margin-bottom: 50px;
   background-color: #7fffd4;
+  display: fixed;
+  top: 0;
 }
 #myLinks button{
   width: 100%;
