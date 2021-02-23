@@ -72,7 +72,7 @@ transition: 1s;
 .mobileIcon,.mobileIconActive {
 cursor: pointer;
 position: fixed;
-top: 0;
+top: 10px;
 background-color: transparent;
 display: block;
 clear: both;
@@ -82,7 +82,6 @@ text-align:   right;
 font-size: 30px;
 color: white;
 text-decoration: none;
-padding: 50px;
 }
 
 .mobileIcon:after {
