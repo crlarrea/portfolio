@@ -68,7 +68,6 @@ transition: 1s;
 cursor: pointer;
 position: fixed;
 top: 0;
-right: 5px;
 background-color: transparent;
 display: block;
 clear: both;
@@ -126,7 +125,7 @@ margin: 0 auto;
 
 .bio img {
   display: inline;
-  margin: 0 20px 0 0;
+  margin: 20px 20px 0 0;
 }
 
 .bio p {
