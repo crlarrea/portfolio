@@ -66,7 +66,7 @@ transition: 1s;
 
 .mobileNav {
  position: fixed;
- top: 0;
+ top: 10px;
 }
 
 .mobileIcon,.mobileIconActive {
@@ -87,7 +87,6 @@ text-decoration: none;
 .mobileIcon:after {
  content: '\002B';
  font-size: 40px;
-
 }
 
 .mobileIconActive:after {
@@ -110,9 +109,6 @@ text-decoration: none;
   font-weight: bold;
 }
 
-#myLinks button:first-of-type {
-  padding-top 30px;
-}
 
 #myLinks button:focus,#myLinks button:hover {
 background-color: #009b7d;
