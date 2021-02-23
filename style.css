@@ -5,8 +5,7 @@
 
 @font-face {
   font-family: 'Roboto';
-  src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-}
+  src: url('webfonts/Roboto-Regular.ttf');
 
 * {
 box-sizing: border-box;
