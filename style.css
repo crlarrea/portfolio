@@ -103,6 +103,7 @@ padding-right: 20px;
 }
 
 #myLinks button{
+  display: block;
   width: 100%;
   Height: 30px;
   margin: 0;
