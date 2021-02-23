@@ -125,7 +125,7 @@ margin: 0 auto;
 
 .bio img {
   display: inline;
-  margin: 20px 20px 0 0;
+  margin: 0 20px 0 0;
 }
 
 .bio p {
@@ -469,7 +469,7 @@ footer p {
 
    .bio img, .cvDownload {
      display: block;
-     margin: 0 auto;
+     margin: 20px auto 0px;
    }
 
    .mainNav {
