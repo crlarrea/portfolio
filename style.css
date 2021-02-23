@@ -68,6 +68,7 @@ transition: 1s;
 cursor: pointer;
 position: fixed;
 top: 0;
+right: 30px;
 background-color: transparent;
 display: block;
 clear: both;
