@@ -66,13 +66,13 @@ transition: 1s;
 
 .mobileNav {
  position: fixed;
- top: 10px;
+ top: -10px;
 }
 
 .mobileIcon,.mobileIconActive {
 cursor: pointer;
 position: fixed;
-top: 10px;
+top: -10px;
 background-color: transparent;
 display: block;
 clear: both;
