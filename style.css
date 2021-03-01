@@ -248,8 +248,8 @@ transition: 1s;
 }
 
 .accordion {
-  background-color:  #009b7d;
-  color: #aaf0d1;
+  background-color:  transparent;
+  /*color: #aaf0d1;*/
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -369,7 +369,8 @@ min-height: 350px;
   /* marginpx;: 20px 20px 0 0; */
   /* border: 2px solid black; */
   font-family: "VT323";
-  /* font-weight: bold; */
+  box-shadow: 5px 5px 15px #264348;
+  border-radius: 5px;
   text-transform: uppercase;
   display: block;
   height: 250px;
