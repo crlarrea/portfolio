@@ -181,7 +181,7 @@ color: #00cc99;
 
 #theContact ul li {
   list-style: none;
-  padding: 15px;
+  padding: 10px 0;
 
 }
 
@@ -195,7 +195,7 @@ color: #00cc99;
 }
 
 #theContact i {
-  padding-right: 15px;
+  padding-right: 5px;
 }
 
 .bio ul li a:hover {
@@ -226,19 +226,31 @@ background-color: transparent;
 border: 2px solid #7fffd4;
 padding: 10px;
 text-transform: uppercase;
-color: #7fffd4;
+/* color: #7fffd4; */
 /* font-weight: bold; */
 margin: 15px 0;
 text-decoration: none;
 text-align: center;
 font-family: "VT323";
 font-size: 30px;
+animation: pulsingLight 10s infinite;
 }
 
+
+@keyframes pulsingLight {
+0% {background-color: transparent; color: #7fffd4}
+50% {background-color: #7fffd4; color:#00cc99; }
+100% {background-color: transparent; color: #7fffd4}
+}
+
+@keyframes pulsingLightStop {
+  100% {background-color: #7fffd4; color: #00cc99}
+  }
+
 .cvDownload:hover {
-background-color: #7fffd4;
-color: #00cc99;
-transition: 1s;
+background-color: #7fffd4; 
+color: #00cc99
+animation: pulsingLightStop 10s infinite;
 }
 
 
