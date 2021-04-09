@@ -284,12 +284,12 @@ footer img {
     margin: 2rem 0 2rem;
 }
 
-.education table ul {
+.education table ul, .projects ul {
     list-style-type: none;
     word-break: normal;
 }
 
-.education table ul li {
+.education table ul li, .projects ul li {
     display: inline;
     /* margin-right: 0.5rem; */
 }
@@ -300,7 +300,7 @@ footer img {
     text-transform: capitalize;
 }
 
-.education table ul li::before {
+.education table ul li::before, .projects ul li::before {
     content: "\0023";
     color: var(--myDarkGrey)
 }
@@ -548,6 +548,20 @@ footer img {
     .readMore {
         width: 80%;
     }
+
+    .projects ul li {
+        color: var(--myDarkGrey);
+    }
+    .projects h3 a, .projects h3 a:link, .projects h3 a:visited {
+        text-transform: capitalize;
+        text-decoration: none;
+        color: var(--myPurple);
+
+    }
+    .projects p {
+        color: var(--myPurple)
+    }
+
     .theContact {
         text-align: center;      
     }
