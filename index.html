@@ -1,416 +1,397 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="./css/all.css" rel="stylesheet"> <!-- Fontawesome -->
-    <script src="functions.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link href="./css/all.css" rel="stylesheet">
+    <!-- Fontawesome -->
     <title>Christian Larrea</title>
+    <script src="functions.js"></script>
 </head>
-<body>
 
-  <section>
-    <!-- "Designed by Vexels" -->
-    <article class="leftPanel">
-        <nav class="mainNav">
-             <button class="navButton" onclick="showSection('home')">home</button>
-             <button class="navButton" onclick="showSection('education')">education</button>
-             <button class="navButton" onclick="showSection('workExperience')">work experience</button>
-             <button class="navButton" onclick="showSection('publications'); nextPaper()">publications</button>
-             <button class="navButton" onclick="showSection('theContact')">contact</button>
-        </nav>
-        <nav class="mobileNav">
-          <!-- Top Navigation Menu -->
-
-          <a class="mobileIcon" onclick="mobileShow()"></a>
-
-<!-- Navigation links (hidden by default) -->
-          <div id="myLinks">
-            <button class="navButton" onclick="showSection('home')">home</button>
-            <button class="navButton" onclick="showSection('education')">education</button>
-            <button class="navButton" onclick="showSection('workExperience')">work experience</button>
-            <button class="navButton" onclick="showSection('publications'); nextPaper()">publications</button>
-            <button class="navButton" onclick="showSection('theContact')">contact</button>
-          </div>
-
+<body onload="showSection('theContact')">
+    <header>
+        <nav>
+            <div class="menuIcon" onclick="showMobileNav()">&#43;</div>
+            <ul id="menuLinks">
+                <li><button type="button" onclick="showSection('workExperience')">work experience</button></li>
+                <li><button type="button" onclick="showSection('education')">education</button></li>
+                <li><button type="button" onclick="showSection('publications'); nextPaper()">publications</button></li>
+                <li><button type="button" onclick="showSection('projects')">projects</button></li>
+                <li><button type="button" onclick="showSection('theContact')">contact</button></li>
+            </ul>
         </nav>
 
-        <div class="bio">
+        <section class="leftPanel">
+            <div class="imgDiv">
+                <img src="./img/weemee.png" alt="Cartoon of me">
+            </div>
+            <div class="bio">
+                <h3>Hi! I'm <span class="spanOne">Christian</span></h3>
+                <p> I'm a chemist, anime lover and a
+                    <span class="spanTwo">&#62; programming enthusiast</span><span class="spanThree">&#818;
+          </span>
+                </p>
+                <a href="./img/cv_christian_larrea_EN.pdf" target="_blank" download="cv_christian_larrea_EN.pdf">download my cv
+        </a>
+            </div>
+        </section>
 
 
-            <img src="./img/weemee.png" alt="Wee Me">
-            <p>
-            Hi! I'm <span>CHRISTIAN.<br></span>
-            I'm a surface scientist by training and a <span class="accent">&#62;programming enthusiast.<span class="theCursor">&#818;</span></span>            <a class="cvDownload" href="./img/cv_christian_larrea_EN.pdf" target= "_blank" download="cv_christian_larrea_EN.pdf">download my cv </a>
+    </header>
+    <footer>
+        <p> Designed with <span>&#61444;</span> in<br>Las Palmas de Gran Canaria <br> -2021-</p>
 
-            </p>
-            <ul>
-              <li><a href="https://orcid.org/0000-0001-7579-7876" target="_blank"><i class="fab fa-orcid fa-lg"></i></a></li>
-              <li><a href="https://crlarrea.github.io" target="_blank"><i class="fab fa-github fa-lg"></i></a></li>
-              <li><a href="https://linkedin.com/in/christian-larrea" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
-              <li><a href="mailto:&#99;&#114;&#108;&#97;&#114;&#114;&#101;&#97;&commat;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&period;&#99;&#111;&#109;" target="_blank"><i class="far fa-envelope fa-lg"></i></a></li>
-              <li><a href="tel:&plus;&#51;&#52;&#54;&#49;&#55;&#48;&#49;&#53;&#55;&#55;&#50;"><i class="fab fa-whatsapp fa-lg"></i></a></li>
-            </ul>
+        <a href="https://www.vexels.com" target="_blank">Thanks to <img src="./img/vexels.png" alt="Vexels icon"> for the
+      awesome background image.</a>
+    </footer>
+    <main>
 
-        </div>
+        <section id="workExperience" class="sectionInfo workExperience">
+            <h2>work experience</h2>
 
-
-    </article>
-    <article class="rightPanel">
-        <div id="home" class="sectionInfo">
-          <h3>Welcome - Bienvenido/a - Bem-vindo/a - Willkommen</h3>
-          <p class="welcomeMessage">
-          Thank you for stopping by and checking out my site.<br><br>
-          You can find what I've been up to these days on the links above.<br>
-          <span class=" accentTwo">Stay safe</span><br>
-          </p>
-
-
-        </div>
-
-        <div id="education" class="sectionInfo">
-          <h1>education</h1>
-          <table>
-            <tr>
-              <td class="theCourse" colspan="2">Full-stack Web Development</td>
-            </tr>
-
-            <tr>
-              <td class="theDate">Apr 2020 - Presently</td>
-              <td class="theUni"><a href="https://www.w3schools.com" target="_blank">W3SCHOOLS</a></td>
-            </tr>
-
-            <tr>
-              <td colspan="2">
+            <article class="accordion">
+                <p>programmer - Freelance <br></p>
+                <span> Apr 2020 - Presently - Las Palmas, SP</span>
+            </article>
+            <div class="panel">
                 <ul>
-                  <li><abbr title="Hypertext Markup Language">HTML</abbr></li>
-                  <li><abbr title="Cascading Style Sheets">CSS</abbr></li>
-                  <li>Javascript</li>
-                  <li><abbr title="Structured Query Language">SQL</abbr></li>
-                  <li><abbr title="Hypertext Preprocessor">PHP</abbr></li>
-                  <li>Bootstrap</li>
-                  <li>jQuery</li>
+                    <li>Developed a web-based interface for database querying through HTML, CSS, JavaScript, MySQL, and PHP.</li>
+                    <li>Developed scripts for the automation of invoice generation based on Excel files through a combination of Python pandas library and LuaLaTex.
+                    </li>
+                    <li>Created an ecommerce website with secure online payment and shipping by integrating the SumUp platform, Woocommerce, and custom HTML+CSS into Wordpress.</li>
+                    <li>Designed a console-based administration software for record-keeping and email automation.</li>
                 </ul>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="theCourse" colspan="2">Responsive Web Design 300 h</td>
-            </tr>
-
-            <tr>
-              <td class="theDate">Feb 2021 - Mar 2021</td>
-              <td class="theUni"><a href="https://www.freecodecamp.org" target="_blank">FreeCodeCamp</a></td>
-            </tr>
-
-            <tr>
-              <td colspan="2">
-                <ul>
-                  <li><abbr title="Hypertext Markup Language">HTML5</abbr></li>
-                  <li><abbr title="Cascading Style Sheet">CSS</abbr></li>
-                  <li>applied visual design</li>
-                  <li>applied accessibility</li>
-                  <li>responsive web design principles</li>
-                  <li>CSS flexbox</li>
-                  <li>CSS grid</li>
-                </ul>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="theCourse" colspan="2">Python for Data Science</td>
-            </tr>
-
-            <tr>
-              <td class="theDate">May 2019 - Jun 2019</td>
-              <td class="theUni"><a href="https://www.edx.org" target="_blank">EDX</a></td>
-            </tr>
-
-            <tr>
-              <td colspan="2">
-                <ul>
-                  <li>numpy</li>
-                  <li>pandas</li>
-                  <li>matplotlib</li>
-                  <li>statistics</li>
-                  <li>data wrangling</li>
-                  <li>machine learning</li>
-                </ul>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="theCourse" colspan="2">Python for Everybody</td>
-            </tr>
-
-            <tr>
-              <td class="theDate">Feb 2015 - Apr 2015</td>
-              <td class="theUni"><a href="https://www.coursera.org" target="_blank">COURSERA</a></td>
-            </tr>
-
-            <tr>
-              <td colspan="2">
-                <ul>
-                  <li>Python Syntax And Semantics</li>
-                  <li>Web Scraping</li>
-                  <li>Data Structures</li>
-                  <li>Web Scraping</li>
-                  <li><abbr title="Structured Query Language">SQL</abbr></li>
-                  <li><abbr title="Regular Expressions">Regex</abbr></li>
-                  <li>Functions</li>
-
-                </ul>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="theCourse" colspan="2">Ph.D. in Surface Chemistry</td>
-            </tr>
-
-            <tr>
-              <td class="theDate">Nov 2013 - Jun 2018</td>
-              <td class="theUni"><a href="https://www.st-andrews.ac.uk" target="_blank">UNIVERSITY OF ST ANDREWS</a></td>
-            </tr>
-
-            <tr>
-              <td colspan="2">
-                <ul>
-                  <li><abbr title="N-Heterocyclic Carbenes">NHC</abbr></li>
-                  <li><abbr title="Ultra-high Vacuum">UHV</abbr></li>
-                  <li><abbr title="Reflection-Absorption Infrared Spectroscopy">RAIRS</abbr></li>
-                  <li><abbr title="High-Resolution Electron Energy Loss Spectroscopy">HREELS</abbr></li>
-                  <li><abbr title="Scanning Tunnelling Miscroscopy">STM</abbr></li>
-                  <li><abbr title="Temperature Programmed Desorption">TPD</abbr></li>
-                  <li><abbr title="Low-Energy Electron Diffraction">LEED</abbr></li>
-                  <li><abbr title="Auger Electron Spectroscopy">AES</abbr></li>
-                  <li><abbr title="Surface-Confined Covalent Organic Frameworks">SCOF</abbr></li>
-                  <li>Oxides</li>
-                  <li><abbr title="Self-Assembled Monolayers">SAM</abbr></li>
-                  <li>Alloys</li>
-
-                </ul>
-              </td>
-            </tr>
-
-
-            <tr>
-              <td class="theCourse" colspan="2">MSc in Chemistry</td>
-            </tr>
-
-            <tr>
-              <td class="theDate">Sep 2009 - Jun 2013</td>
-              <td class="theUni"><a href="https://www.liverpool.ac.uk/" target="_blank">UNIVERSITY OF LIVERPOOL</a></td>
-            </tr>
-
-            <tr>
-              <td colspan="2">
-                <ul>
-                  <li>Physical Chemistry</li>
-                  <li>Organic Chemistry</li>
-                  <li>Inorganic Chemistry</li>
-                  <li>Heterocyclic Chemistry</li>
-                  <li>Protein and DNA</li>
-                  <li><abbr title="Cyclic Voltammetry">CV</abbr></li>
-                  <li>Alloys</li>
-                  <li><abbr title="Gas Chromatography">GC</abbr></li>
-                  <li><abbr title="Infrared Spectroscopy">IR</abbr></li>
-                  <li><abbr title="Ultraviolet-Visible Spectroscopy">UV-Vis</abbr></li>
-                  <li><abbr title="Nuclear Magnetic Resonance">NMR</abbr></li>
-                  <li>Electrochemistry</li>
-                  <li><abbr title="Screen-Printed Electrodes">SPE</abbr></li>
-                  <li>Anthraquinone</li>
-                  <li>O<sub>2</sub> Reduction</li>
-
-
-                </ul>
-              </td>
-            </tr>
-
-
-
-                        <tr>
-                          <td class="theCourse" colspan="2">NVQ Level 2 Business and Administration</td>
-                        </tr>
-
-                        <tr>
-                          <td class="theDate">Sep 2008 - Jun 2009</td>
-                          <td class="theUni"><a href="https://www.greenbankcollege.org.uk/" target="_blank">GREENBANK COLLEGE</a></td>
-                        </tr>
-
-                        <tr>
-                          <td colspan="2">
-                            <ul>
-                              <li><abbr title="K/103/1625"> Carrying out responsabilities at work</abbr></li>
-                              <li><abbr title="M/103/1625">Working within your business environment</abbr></li>
-                              <li><abbr title="H/102/5337">Ensuring your own actions reduce risks to health and safety</abbr></li>
-                              <li><abbr title="H/103/1641">Research and report information</abbr></li>
-                              <li><abbr title="T/103/1644">Operating office equipment</abbr></li>
-
-
-
-                            </ul>
-                          </td>
-                        </tr>
-
-
-
-          </table>
-
-        </div>
-
-        <div id="workExperience" class="sectionInfo">
-
-          <h1>Work Experience</h1>
-
-          <button class="accordion">Programmer <br> Apr 2020 - Presently</button>
-          <div class="panel">
-            <p><b>@FREELANCE</b> <br> Las Palmas de Gran Canaria, SP</p>
-            <ul>
-              <li>Developed a web-based interface for database querying through
-              HTML+CSS, JavaScript, MySQL, and PHP.</li>
-              <li>Developed scripts for the automation of invoice generation based
-              on Excel files through a combination of Python pandas library and
-              LuaLaTex.</li>
-              <li>Created an ecommerce website with secure online payment and
-              shipping by integrating the SumUp platform, Woocommerce, and
-              custom HTML+CSS into Wordpress.</li>
-              <li>Designed a console-based administration software for records-keeping and  email automation..</li>
-            </ul>
-          </div>
-
-
-          <button class="accordion">Data Analyst <br> Jan 2020 - Apr 2020</button>
-          <div class="panel">
-          <p><b>@XPS PENSION GROUP</b> <br> Belfast, GB</p>
-
-            <ul>
-              <li>Extracted, processed, and analysed sensitive client data.</li>
-              <li>Developed, debugged, and deployed VBA scripts and Excel formulas
-              for modelling and visualisation of data.</li>
-              <li>Researched pension schemes and legislation related to Guaranteed
-              Minimum Pension equalisation.</li>
-              <li>Reviewed new data collection protocols and liaised with requests
-              from project management and client teams.</li>
-            </ul>
-          </div>
-
-          <button class="accordion">Resort Customer Helper <br> Aug 2019 - Oct 2019</button>
-          <div class="panel">
-          <p><b>@JET2HOLIDAYS</b> <br> San Bartolomé de Tirajana, SP</p>
-
-            <ul>
-              <li>Provided in-resort customer support to British holidaymakers concerning local amenities, accommodation, and transport.</li>
-              <li>Achieved monthly turnovers of €4000 through sales of excursions,
-              theme parks and shows tickets.</li>
-              <li>Managed complaints, liaised with hotel management and mediated
-              conflicts.</li>
-              <li>Dealt with cash and credit card payments, reimbursements, and liq-
-              uidations.</li>
-            </ul>
-          </div>
-
-
-          <button class="accordion">Freelance Scientific Writer <br> Jan 2019 - Mar 2019</button>
-          <div class="panel">
-          <p><b>@UPWORK</b> <br> Telde, SP</p>
-
-            <ul>
-              <li>Delivered high-quality pieces of academic writing intended for publication in scientific journals.</li>
-              <li>Assisted researchers in reviewing and editing material science articles prior to submission to peer review.</li>
-              <li>Liaised with publishers and clients to achieve project requirements and goals promptly.</li>
-            </ul>
-          </div>
-
-          <button class="accordion">Post-doctoral Fellow <br> Sep 2018 - Jan 2019</button>
-          <div class="panel">
-          <p><b>@QUEEN'S UNIVERSITY</b> <br> Kingston, GB</p>
-
-            <ul>
-              <li>Appointed by Prof. J.H. Horton to lead the project on chemisorption of N-heterocyclic carbenes on silver films for plasmonic biosensing.</li>
-              <li>Devised a contamination-free process for the adsorption of N-heterocyclic carbenes onto silver surfaces.</li>
-              <li>Employed X-ray photoelectron spectroscopy, cyclic voltammetry, chronoamperometry and atomic force microscopy in the characterisation of self-assembled monolayers.</li>
-              <li>Processed, modelled, and fitted spectroscopic and voltammetric data on Matlab/Octave.</li>
-              <li>Delivered comprehensive reports about the data collected, their interpretation, and recommendations.</li>
-              <li>Assisted technicians with their workload and troubleshooting.</li>
-              <li>Mentored Master students in their research and dissertation writing tasks.</li>
-              <li>Maintained a clean and safe environment by ensuring that routine laboratory work adhered to health and safety regulations.</li>
-            </ul>
-          </div>
-
-
-          <button class="accordion">Graduate Researcher<br> Nov 2013 - Jun 2018</button>
-          <div class="panel">
-          <p><b>@UNIVERSITY OF ST ANDREWS</b> <br> St Andrews, GB</p>
-
-            <ul>
-              <li>Engineered a protocol for the fabrication of surface-confined covalent organic frameworks onto gold-palladium alloys.</li>
-              <li>Applied statistic tools in the quantitative description of surface nanoarchitectures.</li>
-              <li>Demonstrated the in-vacuo adsorption of N-heterocyclic carbenes to gold and copper surfaces and the effect of substituents in their binding mode.</li>
-              <li>Proved the reduction of a model copper oxide to metallic copper by the adsorption of N-heterocyclic carbenes.</li>
-              <li>Authored scientific articles and patents.</li>
-              <li>Presented results in conferences, school meetings, and colloquia.</li>
-              <li>Maintained, assembled, and modified ultra-high vacuum equipment.</li>
-
-            </ul>
-          </div>
-
-
-          <button class="accordion">Laboratory Demonstrator<br> Feb 2014 - Jun 2017</button>
-          <div class="panel">
-          <p><b>@UNIVERSITY OF ST ANDREWS</b> <br> St Andrews, GB</p>
-
-            <ul>
-              <li>Supervised Master students in their laboratory coursework and aided in data interpretation.</li>
-              <li>Taught experimental physical chemistry techniques and assessed undergraduate students.</li>
-              <li>Facilitated educational resources and provided private lessons.</li>
-
-            </ul>
-          </div>
-
-
-        </div>
-
-
-
-
-
-        <div id="publications" class="sectionInfo">
-          <h1>Publications</h1>
-
-            <div class="paperBox">
-              <div class="paperBoxContainer">
-                <p id="paperID"></p>
-                <p id="authorID">gg</p>
-              </div>
-              <a class="nextPaper" onclick="nextPaper()"> next  paper</a>
-              <a class="readMore" id="linkID"  href="#" target="_blank" >find out more</a>
             </div>
 
-        </div>
+            <article class="accordion">
+                <p>data analyst - XPS Pension Group <br></p>
+                <span> Jan 2020 - Apr 2020 - Belfast, GB</span>
+            </article>
+            <div class="panel">
+                <ul>
+                    <li>Extracted, processed, and analysed sensitive client data.</li>
+                    <li>Developed, debugged, and deployed VBA scripts and Excel formulas for modelling and visualisation of data.</li>
+                    <li>Researched pension schemes and legislation related to Guaranteed Minimum Pension equalisation.</li>
+                    <li>Reviewed new data collection protocols and liaised with requests from project management and client teams.</li>
+                </ul>
+            </div>
 
-        <div id="theContact" class="sectionInfo">
-          <h1>contact</h1>
-          <ul>
-            <li><a href="https://linkedin.com/in/christian-larrea" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i> christian-larrea</a></li>
-            <li><a href="mailto:&#99;&#114;&#108;&#97;&#114;&#114;&#101;&#97;&commat;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&period;&#99;&#111;&#109;" target="_blank"><i class="far fa-envelope fa-lg"></i> &#99;&#114;&#108;&#97;&#114;&#114;&#101;&#97;&commat;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&period;&#99;&#111;&#109;</a></li>
-            <li><a href="tel:&plus;&#51;&#52;&#54;&#49;&#55;&#48;&#49;&#53;&#55;&#55;&#50;" target="_blank"><i class="fab fa-whatsapp fa-lg"></i> &plus;&#51;&#52;&#32;&#54;&#49;&#55;&#32;&#48;&#49;&#53;&#32;&#55;&#55;&#50;</a></li>
-          </ul>
-        </div>
-    </article>
-</section>
-    <footer>
+            <article class="accordion">
+                <p>resort customer helper - Jet2holidays <br></p>
+                <span> Aug 2019 - Oct 2019 - San Bartolomé, SP</span>
+            </article>
+            <div class="panel">
+                <ul>
+                    <li>Provided in-resort customer support to British holidaymakers concerning local amenities, accommodation, and transport.</li>
+                    <li>Achieved monthly turnovers of €4000 through sales of excursions, theme parks and shows tickets.</li>
+                    <li>Managed complaints, liaised with hotel management and mediated conflicts.
+                    </li>
+                    <li>Dealt with cash and credit card payments, reimbursements, and liquidations.</li>
+                </ul>
+            </div>
 
-      <p>
-        <i class="fas fa-water fa-lg"></i>
-        <i class="fa fa-fish fa-lg"></i>
-        <i class="fas fa-water fa-lg"></i>
-        <br>
-         Las Palmas de Gran Canaria, SP <br>
-         - 2021 -
+            <article class="accordion">
+                <p>freelance scientific writer - Upwork <br></p>
+                <span> Jan 2019 - Mar 2019 - Telde, SP</span>
+            </article>
+            <div class="panel">
+                <ul>
+                    <li>Delivered high-quality pieces of academic writing intended for publication in scientific journals.</li>
+                    <li>Assisted researchers in reviewing and editing material science articles prior to submission to peer review.
+                    </li>
+                    <li>Liaised with publishers and clients to achieve project requirements and goals promptly.</li>
+                </ul>
+            </div>
 
-       </p>
-    </footer>
-    <script>showAccordion()</script>
+            <article class="accordion">
+                <p>post-doctoral fellow - Queen's University <br></p>
+                <span> Sep 2018 - Jan 2020 - Kingston, CA</span>
+            </article>
+            <div class="panel">
+                <ul>
+                    <li>Appointed by Prof. J.H. Horton to lead the project on chemisorption of N-heterocyclic carbenes on silver films for plasmonic biosensing.</li>
+                    <li>Devised a contamination-free process for the adsorption of N-heterocyclic carbenes onto silver surfaces.
+                    </li>
+                    <li>Employed X-ray photoelectron spectroscopy, cyclic voltammetry, chronoamperometry and atomic force microscopy in the characterisation of self-assembled monolayers.</li>
+                    <li>Processed, modelled, and fitted spectroscopic and voltammetric data on Matlab/Octave.</li>
+                    <li>Delivered comprehensive reports about the data collected, their interpretation, and recommendations.</li>
+                    <li>Assisted technicians with their workload and troubleshooting.</li>
+                    <li>Mentored Master students in their research and dissertation writing tasks.</li>
+                    <li>Maintained a clean and safe environment by ensuring that routine laboratory work adhered to health and safety regulations.</li>
+                </ul>
+            </div>
+
+            <article class="accordion">
+                <p>graduate researcher - University of St Andrews<br></p>
+                <span> Nov 2013 - Jun 2018 - St Andrews, GB</span>
+            </article>
+            <div class="panel">
+                <ul>
+                    <li>Engineered a protocol for the fabrication of surface-confined covalent organic frameworks onto gold-palladium alloys.</li>
+                    <li>Applied statistic tools in the quantitative description of surface nanoarchitectures.</li>
+                    <li>Demonstrated the in-vacuo adsorption of N-heterocyclic carbenes to gold and copper surfaces and the effect of substituents in their binding mode.</li>
+                    <li>Proved the reduction of a model copper oxide to metallic copper by the adsorption of N-heterocyclic carbenes.
+                    </li>
+                    <li>Authored scientific articles and patents.</li>
+                    <li>Presented results in conferences, school meetings, and colloquia.</li>
+                    <li>Maintained, assembled, and modified ultra-high vacuum equipment.</li>
+                </ul>
+            </div>
+
+            <article class="accordion">
+                <p>laboratory demonstrator - University of St Andrews<br></p>
+                <span> Feb 2014 - Jun 2017 - St Andrews, GB</span>
+            </article>
+            <div class="panel">
+                <ul>
+                    <li>Supervised Master students in their laboratory coursework and aided in data interpretation.</li>
+                    <li>Taught experimental physical chemistry techniques and assessed undergraduate students.</li>
+                    <li>Facilitated educational resources and provided private lessons.</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section id="education" class="sectionInfo education">
+            <h2>education &amp; mooc</h2>
+            <table>
+                <tr>
+                    <td class="theCourse" colspan="2">Full-stack Web Development</td>
+                </tr>
+
+                <tr>
+                    <td class="theDate">Apr 2020 - Presently</td>
+                    <td class="theUni"><a href="https://www.w3schools.com" target="_blank">W3SCHOOLS</a></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <ul>
+                            <li><abbr title="Hypertext Markup Language">HTML</abbr></li>
+                            <li><abbr title="Cascading Style Sheets">CSS</abbr></li>
+                            <li>Javascript</li>
+                            <li><abbr title="Structured Query Language">SQL</abbr></li>
+                            <li><abbr title="Hypertext Preprocessor">PHP</abbr></li>
+                            <li>Bootstrap</li>
+                            <li>jQuery</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="theCourse" colspan="2">Responsive Web Design 300h</td>
+                </tr>
+
+                <tr>
+                    <td class="theDate">Feb 2021 - Mar 2021</td>
+                    <td class="theUni"><a href="https://www.freecodecamp.org" target="_blank">FreeCodeCamp</a></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <ul>
+                            <li><abbr title="Hypertext Markup Language">HTML5</abbr></li>
+                            <li><abbr title="Cascading Style Sheet">CSS</abbr></li>
+                            <li>applied visual design</li>
+                            <li>applied accessibility</li>
+                            <li>responsive web design principles</li>
+                            <li>CSS flexbox</li>
+                            <li>CSS grid</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="theCourse" colspan="2">Python for Data Science</td>
+                </tr>
+
+                <tr>
+                    <td class="theDate">May 2019 - Jun 2019</td>
+                    <td class="theUni"><a href="https://www.edx.org" target="_blank">EDX</a></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <ul>
+                            <li>numpy</li>
+                            <li>pandas</li>
+                            <li>matplotlib</li>
+                            <li>statistics</li>
+                            <li>data wrangling</li>
+                            <li>machine learning</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="theCourse" colspan="2">Python for Everybody</td>
+                </tr>
+
+                <tr>
+                    <td class="theDate">Feb 2015 - Apr 2015</td>
+                    <td class="theUni"><a href="https://www.coursera.org" target="_blank">COURSERA</a></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <ul>
+                            <li>Python Syntax And Semantics</li>
+                            <li>Web Scraping</li>
+                            <li>Data Structures</li>
+                            <li>Web Scraping</li>
+                            <li><abbr title="Structured Query Language">SQL</abbr></li>
+                            <li><abbr title="Regular Expressions">Regex</abbr></li>
+                            <li>Functions</li>
+
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="theCourse" colspan="2">Ph.D. in Surface Chemistry</td>
+                </tr>
+
+                <tr>
+                    <td class="theDate">Nov 2013 - Jun 2018</td>
+                    <td class="theUni"><a href="https://www.st-andrews.ac.uk" target="_blank">UNIVERSITY OF ST ANDREWS</a></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <ul>
+                            <li><abbr title="N-Heterocyclic Carbenes">NHC</abbr></li>
+                            <li><abbr title="Ultra-high Vacuum">UHV</abbr></li>
+                            <li><abbr title="Reflection-Absorption Infrared Spectroscopy">RAIRS</abbr></li>
+                            <li><abbr title="High-Resolution Electron Energy Loss Spectroscopy">HREELS</abbr></li>
+                            <li><abbr title="Scanning Tunnelling Miscroscopy">STM</abbr></li>
+                            <li><abbr title="Temperature Programmed Desorption">TPD</abbr></li>
+                            <li><abbr title="Low-Energy Electron Diffraction">LEED</abbr></li>
+                            <li><abbr title="Auger Electron Spectroscopy">AES</abbr></li>
+                            <li><abbr title="Surface-Confined Covalent Organic Frameworks">SCOF</abbr></li>
+                            <li>Oxides</li>
+                            <li><abbr title="Self-Assembled Monolayers">SAM</abbr></li>
+                            <li>Alloys</li>
+
+                        </ul>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td class="theCourse" colspan="2">MSc in Chemistry</td>
+                </tr>
+
+                <tr>
+                    <td class="theDate">Sep 2009 - Jun 2013</td>
+                    <td class="theUni"><a href="https://www.liverpool.ac.uk/" target="_blank">UNIVERSITY OF LIVERPOOL</a></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <ul>
+                            <li>Physical Chemistry</li>
+                            <li>Organic Chemistry</li>
+                            <li>Inorganic Chemistry</li>
+                            <li>Heterocyclic Chemistry</li>
+                            <li>Protein and DNA</li>
+                            <li><abbr title="Cyclic Voltammetry">CV</abbr></li>
+                            <li>Alloys</li>
+                            <li><abbr title="Gas Chromatography">GC</abbr></li>
+                            <li><abbr title="Infrared Spectroscopy">IR</abbr></li>
+                            <li><abbr title="Ultraviolet-Visible Spectroscopy">UV-Vis</abbr></li>
+                            <li><abbr title="Nuclear Magnetic Resonance">NMR</abbr></li>
+                            <li>Electrochemistry</li>
+                            <li><abbr title="Screen-Printed Electrodes">SPE</abbr></li>
+                            <li>Anthraquinone</li>
+                            <li>O<sub>2</sub> Reduction</li>
+
+
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+                <tr>
+                    <td class="theCourse" colspan="2">NVQ Level 2 Business and Administration</td>
+                </tr>
+
+                <tr>
+                    <td class="theDate">Sep 2008 - Jun 2009</td>
+                    <td class="theUni"><a href="https://www.greenbankcollege.org.uk/" target="_blank">GREENBANK COLLEGE</a></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <ul>
+                            <li><abbr title="K/103/1625"> Carrying out responsabilities at work</abbr></li>
+                            <li><abbr title="M/103/1625">Working within your business environment</abbr></li>
+                            <li><abbr title="H/102/5337">Ensuring your own actions reduce risks to health and safety</abbr></li>
+                            <li><abbr title="H/103/1641">Research and report information</abbr></li>
+                            <li><abbr title="T/103/1644">Operating office equipment</abbr></li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+            </table>
+        </section>
+
+        <section id="publications" class="sectionInfo publications">
+            <h2>publications</h2>
+            <article>
+                <div class="paperDetails">
+                    <h3 id="paperID">paper title</h3>
+                    <h4 id="authorID">authors</h4>
+                </div>
+                <div class="paperButtons">
+                    <button class="nextPaper" onclick="nextPaper()"> next paper</button>
+                    <button class="readMore" id="linkID" href="https://chemistry-europe.onlinelibrary.wiley.com/doi/epdf/10.1002/cphc.201701045" target="_blank">
+            read more</button>
+                </div>
+            </article>
+        </section>
+
+        <section id="projects" class="sectionInfo projects">
+            <h2>projects</h2>
+            <article>
+                <p>"coming up soon!"</p>
+            </article>
+        </section>
+        <section id="theContact" class="sectionInfo theContact">
+            <span>Fancy a chat?</span>
+            <h2>contact</h2>
+            <p>Feel free to check my social and contact me on the following:</p>
+            <ul>
+                <li><a href="https://orcid.org/0000-0001-7579-7876" target="_blank"><i class="fab fa-orcid fa-lg"></i> orcid</a>
+                </li>
+                <li><a href="https://crlarrea.github.io" target="_blank"><i class="fab fa-github fa-lg"></i> github</a></li>
+                <li><a href="https://linkedin.com/in/christian-larrea" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i>
+            linkedin</a></li>
+                <li><a href="https://twitter.com/Christi77056573" target="_blank"><i class="fab fa-twitter fa-lg"></i>
+            twitter</a></li>
+            </ul>
+            <ul>
+                <li><a href="mailto:&#99;&#114;&#108;&#97;&#114;&#114;&#101;&#97;&commat;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&period;&#99;&#111;&#109;" target="_blank"><i class="far fa-envelope fa-lg"></i> e-mail</a></li>
+                <li><a href="tel:&plus;&#51;&#52;&#54;&#49;&#55;&#48;&#49;&#53;&#55;&#55;&#50;"><i
+              class="fab fa-whatsapp fa-lg"></i> phone</a></li>
+            </ul>
+        </section>
+
+    </main>
+    <script>
+        showAccordion()
+    </script>
 
 </body>
+
+
 </html>
