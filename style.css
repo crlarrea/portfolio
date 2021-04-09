@@ -423,9 +423,10 @@ footer img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-bottom: 1rem;
     gap: 0.5rem;
+    width: 80%;
 }
 
 .theContact ul li {
@@ -543,6 +544,12 @@ footer img {
         width: 80%;
     }
     .theContact {
-        text-align: center;
+        text-align: center;      
     }
+    .theContact ul  {
+        flex-direction: column;
+        align-items: flex-start;
+        align-content: center;  
+    }
+
 }
