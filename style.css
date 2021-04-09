@@ -386,10 +386,7 @@ footer img {
     opacity: 0.8;
 }
 
-.nextPaper:hover {
-    background-color: var(--myYellow);
-    color: var(--myPurple);
-}
+
 
 .theContact,
 .education,
