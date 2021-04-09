@@ -88,10 +88,16 @@ function showSection(n) {
 
 function showMobileNav() {
     let x = document.getElementById("menuLinks");
+    let y = document.getElementsByClassName("menuIcon")[0];
+    // x.addEventListener("click", function() {
+    //     this.classList.toggle("active")});
+
     if (x.style.height != "30vh") {
         x.style.height = "30vh";
+        y.classList.toggle("testClass");
     } else {
         x.style.height = "0";
+        y.classList.remove("testClass");
     }
 
 
