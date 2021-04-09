@@ -326,7 +326,7 @@ footer img {
     font-size: 1rem;
 }
 
-.publications article {
+.publications article, .projects article {
     width: 80%;
     display: flex;
     flex-direction: column;
