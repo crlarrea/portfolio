@@ -269,7 +269,7 @@ footer img {
     overflow: hidden;
     width: 80%;
     color: var(--myPurple);
-    transition: max-height 0.2s ease-out;
+    transition: max-height 1s ease-out;
 }
 
 .panel ul {
