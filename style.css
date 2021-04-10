@@ -412,6 +412,12 @@ footer img {
     /* display: none; */
 }
 
+.projects h3 a, .projects h3 a:link, .projects h3 a:visited {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--myPurple);
+
+}
 .theContact p {
     margin-bottom: 2rem;
     color: var(--myPurple);
@@ -552,12 +558,7 @@ footer img {
     .projects ul li {
         color: var(--myDarkGrey);
     }
-    .projects h3 a, .projects h3 a:link, .projects h3 a:visited {
-        text-transform: capitalize;
-        text-decoration: none;
-        color: var(--myPurple);
 
-    }
     .projects p {
         color: var(--myPurple)
     }
