@@ -1,10 +1,22 @@
+function animateButton() {
+    const btn = document.querySelector('.downloadButton');
+    btn.addEventListener('mouseenter', function () {
+        this.classList.toggle('downloadButtonHover');
+    });
+    btn.addEventListener('mouseleave', function () {
+        this.classList.toggle('downloadButtonHover');
+    });
+    
+
+}
+
 function showAccordion() {
-    var acc = document.querySelectorAll(".accordion");
+    let acc = document.querySelectorAll(".accordion");
 
     for (let i = 0; i < acc.length; i++) {
         acc[i].addEventListener("click", function () {
             this.classList.toggle("active");
-            var panel = this.nextElementSibling;
+            let panel = this.nextElementSibling;
             if (panel.style.maxHeight) {
                 panel.style.maxHeight = null;
             } else {
@@ -17,11 +29,11 @@ function showAccordion() {
 
 
 function showMore() {
-    var seeMore = document.querySelectorAll(".showMore");
+    const seeMore = document.querySelectorAll(".showMore");
     for (i = 0; i < seeMore.length; i++) {
         seeMore[i].addEventListener("click", function () {
             this.classList.toggle("showMoreActive");
-            var panel = this.previousElementSibling;
+            let panel = this.previousElementSibling;
             if (panel.style.height) {
                 panel.style.height = null;
                 document.querySelector(".showMore").style.bottom = "60px";
@@ -39,7 +51,7 @@ function showMore() {
 
 
 
-var papers = ["Metallosupramolecular Assembly of Cr and p-Terphenyldinitrile by Dissociation of Metal Carbonyls on Au(111).",
+let papers = ["Metallosupramolecular Assembly of Cr and p-Terphenyldinitrile by Dissociation of Metal Carbonyls on Au(111).",
     "Fabrication of a High-Quality, Porous, Surface-Confined Covalent Organic Framework on a Reactive Metal Surface.",
     "Two-dimensional self-assembly of benzotriazole on an inert substrate.",
     "Simple direct formation of self-assembled N-heterocyclic carbene monolayers on gold and their application in biosensing.",
@@ -50,7 +62,7 @@ var papers = ["Metallosupramolecular Assembly of Cr and p-Terphenyldinitrile by 
 ];
 
 
-var theAuthors = ["Anderson, A.E., Grillo, F., Larrea, C.R., Seljamäe-Green, R.T., Früchtl, H.A. and Baddeley, C.J., 2016. The Journal of Physical Chemistry C, 120(2), pp.1049-1055.",
+let theAuthors = ["Anderson, A.E., Grillo, F., Larrea, C.R., Seljamäe-Green, R.T., Früchtl, H.A. and Baddeley, C.J., 2016. The Journal of Physical Chemistry C, 120(2), pp.1049-1055.",
     "Larrea, C.R. and Baddeley, C.J., 2016. ChemPhysChem, 17(7), pp.971-975.",
     "Grillo, F., Torres, J.G., Treanor, M.J., Larrea, C.R., Göetze, J.P., Lacovig, P., Früchtl, H.A., Schaub, R. and Richardson, N.V., 2016. Nanoscale, 8(17), pp.9167-9177.",
     "Crudden, C.M., Horton, J.H., Narouz, M.R., Li, Z., Smith, C.A., Munro, K., Baddeley, C.J., Larrea, C.R., Drevniok, B., Thanabalasingam, B. and McLean, A.B., 2016. Nature communications, 7(1), pp.1-7.",
@@ -60,7 +72,7 @@ var theAuthors = ["Anderson, A.E., Grillo, F., Larrea, C.R., Seljamäe-Green, R.
     "Grillo, F., Batchelor, D., Larrea, C.R., Francis, S.M., Lacovig, P. and Richardson, N.V., 2019. Nanoscale,11(27), pp.13017-13031."
 ];
 
-var linkToPaper = ["https://pubs.acs.org/doi/pdf/10.1021/acs.jpcc.5b10489",
+let linkToPaper = ["https://pubs.acs.org/doi/pdf/10.1021/acs.jpcc.5b10489",
     "https://chemistry-europe.onlinelibrary.wiley.com/doi/epdf/10.1002/cphc.201600027",
     "https://pubs.rsc.org/en/content/articlepdf/2016/nr/c6nr00821f",
     "https://www.nature.com/articles/ncomms12654",
@@ -105,11 +117,11 @@ for (let i = 0; i < papers.length; i++) {
 
 const arrows = document.querySelectorAll('.arrows');
 
-for(let el of arrows) {
-    el.addEventListener('mouseenter', function() {
+for (let el of arrows) {
+    el.addEventListener('mouseenter', function () {
         this.style.opacity = "1";
     })
-    el.addEventListener('mouseleave', function() {
+    el.addEventListener('mouseleave', function () {
         this.style.opacity = "0.5";
     })
 }
