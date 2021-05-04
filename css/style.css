@@ -569,11 +569,11 @@ i.arrows {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    align-items: self-start;
     gap: 1rem;
-    justify-content: flex-start;
+    justify-content: center;
     margin-top: 1rem;
+    align-content: flex-end;
 }
 
 .theContact ul li {
