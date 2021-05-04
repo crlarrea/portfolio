@@ -1,20 +1,41 @@
 function showAccordion() {
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
+    var acc = document.querySelectorAll(".accordion");
+
+    for (let i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
             this.classList.toggle("active");
             var panel = this.nextElementSibling;
             if (panel.style.maxHeight) {
                 panel.style.maxHeight = null;
-
             } else {
                 panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+}
+
+
+
+function showMore() {
+    var seeMore = document.querySelectorAll(".showMore");
+    for (i = 0; i < seeMore.length; i++) {
+        seeMore[i].addEventListener("click", function () {
+            this.classList.toggle("showMoreActive");
+            var panel = this.previousElementSibling;
+            if (panel.style.height) {
+                panel.style.height = null;
+                document.querySelector(".showMore").style.bottom = "60px";
+                document.querySelector(".education .showMore").style.bottom = "45px";
+
+            } else {
+                panel.style.height = "auto";
+                document.querySelector(".showMore.showMoreActive").style.bottom = "10px";
 
             }
         });
     }
 }
+
 
 
 
@@ -37,7 +58,6 @@ var theAuthors = ["Anderson, A.E., Grillo, F., Larrea, C.R., Seljamäe-Green, R.
     "Larrea, C.R., Baddeley, C.J., Narouz, M.R., Mosey, N.J., Horton, J.H. and Crudden, C.M., 2017. ChemPhysChem, 18(24), pp.3536-3539.",
     "Larrea, C.R., 2018. PhD Thesis, University of St Andrews, Scotland, GB.",
     "Grillo, F., Batchelor, D., Larrea, C.R., Francis, S.M., Lacovig, P. and Richardson, N.V., 2019. Nanoscale,11(27), pp.13017-13031."
-
 ];
 
 var linkToPaper = ["https://pubs.acs.org/doi/pdf/10.1021/acs.jpcc.5b10489",
@@ -51,54 +71,55 @@ var linkToPaper = ["https://pubs.acs.org/doi/pdf/10.1021/acs.jpcc.5b10489",
 ];
 
 
-var currentPaper = 0;
 
-function nextPaper() {
+const scroller = document.querySelector('.scroller');
 
-    if (currentPaper == papers.length) {
-        currentPaper = 0;
-    }
+for (let i = 0; i < papers.length; i++) {
+    let newDiv = document.createElement('div');
+    let paperInfo = document.createElement('div');
+    let newH3 = document.createElement('h3');
+    let newH4 = document.createElement('h4');
+    let newLink = document.createElement('a');
+    let newCounter = document.createElement('p');
 
-    p = document.getElementById("paperID");
-    s = document.getElementById("authorID");
-    l = document.getElementById("linkID");
 
-    p.innerHTML = papers[currentPaper];
-    s.innerHTML = theAuthors[currentPaper];
-    l.href = linkToPaper[currentPaper];
+    newDiv.classList.add('paperBox');
+    newCounter.classList.add('counter');
+    newCounter.innerText = `${i + 1}/${papers.length}`;
 
-    currentPaper += 1;
+    newH3.innerText = papers[i];
+    newH4.innerText = theAuthors[i];
+
+    newLink.innerText = "read more";
+    newLink.setAttribute('href', linkToPaper[i]);
+    newLink.setAttribute('target', '__blank');
+    newLink.classList.add('readMore');
+
+
+    scroller.appendChild(newDiv);
+    newDiv.append(newCounter, paperInfo, newLink);
+    paperInfo.append(newH3, newH4)
 }
 
 
 
+const arrows = document.querySelectorAll('.arrows');
 
-function showSection(n) {
-    var all = document.getElementsByClassName("sectionInfo");
-
-    for (var i = 0; i < all.length; ++i) {
-
-        if (all[i].id != n) {
-            document.getElementById(all[i].id).style.display = "none";
-        } else {
-            document.getElementById(all[i].id).style.display = "flex";
-        }
-    }
+for(let el of arrows) {
+    el.addEventListener('mouseenter', function() {
+        this.style.opacity = "1";
+    })
+    el.addEventListener('mouseleave', function() {
+        this.style.opacity = "0.5";
+    })
 }
 
-function showMobileNav() {
-    let x = document.getElementById("menuLinks");
-    let y = document.getElementsByClassName("menuIcon")[0];
-    // x.addEventListener("click", function() {
-    //     this.classList.toggle("active")});
-
-    if (x.style.height != "30vh") {
-        x.style.height = "30vh";
-        y.classList.toggle("testClass");
-    } else {
-        x.style.height = "0";
-        y.classList.remove("testClass");
-    }
 
 
-}
+rightArrow.addEventListener('click', function () {
+    document.querySelector('#allPapers').scrollBy(500, 0);
+})
+
+leftArrow.addEventListener('click', function () {
+    document.querySelector('#allPapers').scrollBy(-500, 0);
+})
