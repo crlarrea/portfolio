@@ -387,7 +387,7 @@ padding-top: 2rem;
     height: 100%;  
     scroll-snap-align: center;
     gap: 1rem;
-    background:  rgba(0,0,0,0.02) url("/home/q/Desktop/portfolio_updated/img/bkg.png") repeat fixed;
+    background:  rgba(0,0,0,0.02) url("../img/bkg.png") repeat fixed;
     border-radius: 5px;
 }
 
