@@ -562,8 +562,8 @@ i.arrows {
 
 .theContact p {
     font-family: var(--serif);
-    font-weight: bold;   
-    align-content: center; 
+    font-weight: bold; 
+    text-align: center;  
 }
 
 .theContact ul {
