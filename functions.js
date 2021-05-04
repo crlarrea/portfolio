@@ -41,7 +41,7 @@ function showMore() {
 
             } else {
                 panel.style.height = "auto";
-                document.querySelector(".showMore.showMoreActive").style.bottom = "10px";
+                document.querySelector(".showMore.showMoreActive").style.bottom = "0px";
 
             }
         });
