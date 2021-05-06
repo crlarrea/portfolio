@@ -327,6 +327,12 @@ main span {
     content: "less";
 }
 
+.education img, .workExperience img {
+    display: inline-flex;
+    width: 50%;
+    align-self: center;
+    opacity: 0.3;
+}
 
 .education table {
     border-collapse: collapse;    
