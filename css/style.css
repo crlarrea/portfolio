@@ -430,9 +430,11 @@ padding-top: 2rem;
     scroll-snap-align: center;
     scroll-snap-stop: always;
     gap: 1rem;
+    /* BACKGROUND IMAGE BY VEXELS: https://www.vexels.com/*/
     background:  rgba(0,0,0,0.02) url("../img/bkg.png") repeat fixed;
     border-radius: 5px;
 }
+
 
 i.arrows {
     display: none;
