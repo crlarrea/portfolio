@@ -108,8 +108,8 @@ header ul li:nth-of-type(1) {
 }
 
 .slide-in-bottom {
-	-webkit-animation: slide-in-bottom 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-bottom 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	-webkit-animation: slide-in-bottom 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-bottom 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
  @-webkit-keyframes slide-in-bottom {
@@ -332,6 +332,7 @@ main span {
     width: 50%;
     align-self: center;
     opacity: 0.3;
+    margin-top: 5rem;
 }
 
 .education table {
@@ -663,7 +664,7 @@ i.arrows {
     }
 
     .education {
-        margin-top: 15rem;
+        margin-top: 20rem;
     }
     .education p, .workExperience p {
         width: 80%;
