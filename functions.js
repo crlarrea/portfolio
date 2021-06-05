@@ -135,3 +135,5 @@ rightArrow.addEventListener('click', function () {
 leftArrow.addEventListener('click', function () {
     document.querySelector('#allPapers').scrollBy(-500, 0);
 })
+
+
