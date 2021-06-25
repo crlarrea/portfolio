@@ -78,7 +78,7 @@ let linkToPaper = ["https://pubs.acs.org/doi/pdf/10.1021/acs.jpcc.5b10489",
     "https://www.nature.com/articles/ncomms12654",
     "https://patents.google.com/patent/CA3026196A1/en",
     "https://chemistry-europe.onlinelibrary.wiley.com/doi/epdf/10.1002/cphc.201701045",
-    "https://research-repository.st-andrews.ac.uk/handle/10023/14231",
+    "/img/Thesis.pdf",
     "https://pubs.rsc.org/en/content/articlelanding/2019/nr/c9nr04152d#!divAbstract"
 ];
 
